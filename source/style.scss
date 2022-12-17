@@ -1,53 +1,13 @@
 @use "sass:math" as math;
 @import "./var";
 @import "./reset";
+
 @media (max-width:1200px) {
     h2, li{
         font-size: 0.75rem;
-        // padding:2% 0;
     }
 }
-// @media (max-width:900px) {
-//  nav{
-//     display:none;
-//  }
-// }
 
-
-
-// $time: math.random(math.div(4s,1s));
-// body{
-//     background-color: $accent-color;
-// }
-
-// p{
-//     font-size: map-get($font-size, lg);
-// }
-// .container{
-//     @include my-flex(row, wrap, center);
-//     gap:1rem;
-    
-//     .card{
-//         width: 30%;
-//         display: flex;
-//         padding: 1rem;
-//         // transition: all math.random(math.div(8s, 1s)) * 1s;
-//         &:hover{
-//             transform: scale(1.1);
-            
-//             box-shadow: 0 0 $time+px $time+px;
-//         }
-//         img{
-//             width: 50%;
-//         }
-//     }
-// }
-// .darktheme{
-//     @include theme("dark");
-// }
-// .lighttheme{
-//     @include theme("light");
-// }
 .container{
     width:80%;
     margin: 0 auto;
@@ -149,10 +109,6 @@ nav{
 .forth{
     .forth-container{
         @extend .container;
-        // display: flex;
-        // flex-direction: row;
-        // justify-content: space-between;
-        // align-items: center;
         @include my-flex("row","nowrap","space-between");
         .text{
             h1{
@@ -181,10 +137,6 @@ nav{
     margin-top: 3%;
     .fifth-container{
         @extend .container;
-        // display: flex;
-        // flex-direction: row;
-        // flex-wrap: wrap;
-        // justify-content: space-between;
         @include my-flex("row", "wrap", "space-between");
         text-align: center;
         div{
@@ -242,10 +194,6 @@ nav{
             padding-top: 1%;
         }
         .images{
-            // display:flex;
-            // flex-direction: row;
-            // justify-content: space-between;
-            // flex-wrap: wrap;
             @include my-flex("row","wrap", "space-between");
             padding-top: 3%;
             img{
@@ -266,9 +214,6 @@ nav{
             font-weight: normal;
         }
         .staff{
-            // display: flex;
-            // flex-direction: row;
-            // justify-content: space-between;
             @include my-flex("row","nowrap","space-between");
             padding-top: 6%;
             
